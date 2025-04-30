@@ -1,0 +1,508 @@
+/* body,html{
+    margin: 0;
+    padding: 0;
+
+}
+.header{
+    width: 100%;
+    height: 150px;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.child{
+    width: 20%;
+    height: inherit;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+.child1{
+    width: 80%;
+    height: inherit;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+.menu{
+    width: 100%;
+    height: 80px;
+    background: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+.section{
+    width: 100%;
+    height: 200px;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.child2{
+    width: 33.33%;
+    height: inherit;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+.child3{
+    width: 33.33%;
+    height: inherit;
+    background: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+.child4{
+    width: 33.33%;
+    height: inherit;
+    background: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+.section1{
+    width: 100%;
+    height: 400px;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.child5{
+    width: 75%;
+    height: inherit;
+    background: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+.child6{
+    width: 25%;
+    height: inherit;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+.footer{
+    width: 100%;
+    height: 80px;
+    background: slategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+} */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scrollbar-width: none;
+}
+
+/* هدر */
+.header {
+    width: 100%;
+    height: 130px;
+    background: linear-gradient(135deg, #2b2d42, #1a1a2e);
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.child {
+    width: 20%;
+    height: inherit;
+    background: #ef233c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+}
+
+.child1 {
+    width: 80%;
+    height: inherit;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+
+/* منو */
+.menu {
+    width: 100%;
+    height: 50px;
+    background: #4cc9f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* بخش‌های اصلی */
+.section {
+    width: 100%;
+    height: 200px;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.child2 {
+    width: 33.33%;
+    height: inherit;
+    background: linear-gradient(135deg, #4361ee, #3a0ca3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: white;
+    transition: all 0.3s ease;
+    background-size: 200% 200%;
+    animation: gradientShift 3s infinite linear;
+    
+}
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.child3 {
+    width: 33.33%;
+    height: inherit;
+    background: linear-gradient(135deg, #adb5bd, #6c757d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: white;
+    transition: all 0.3s ease;
+    background-size: 200% 200%;
+    animation: gradientShift 3s infinite linear;
+    
+}
+
+.child4 {
+    width: 33.33%;
+    height: inherit;
+    background: linear-gradient(135deg, #7209b7, #f72585);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: white;
+    transition: all 0.3s ease;
+    background-size: 200% 200%;
+    animation: gradientShift 3s infinite linear;
+    
+}
+
+.child2:hover, .child3:hover, .child4:hover {
+    transform: rotate(5deg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* محتوا و سایدبار */
+.section1 {
+    width: 100%;
+    height: 400px;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 2rem 0;
+}
+
+.child5 {
+    width: 75%;
+    height: 92%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    padding-top: 3.8rem;
+    margin-top: -30px;
+}
+
+.content-title {
+    font-size: 1.8rem;
+    color: #2b2d42;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #4cc9f0;
+    margin-top: -0.5%;
+
+}
+
+.content-text {
+    line-height: 1.8;
+    color: #495057;
+    text-align: justify;
+}
+
+.child6 {
+    width: 25%;
+    height: 10%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: start;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-right: 1px solid #e9ecef;
+    margin-top: -30px;
+}
+
+/* سایدبار کاربردی */
+.sidebar-title {
+    font-size: 1.5rem;
+    color: #2b2d42;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    margin-top: -2%;
+}
+
+.search-box {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 30px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    padding-right: 40px;
+    margin-top: 10%;
+}
+
+.search-box input:focus {
+    border-color: #4cc9f0;
+    box-shadow: 0 0 0 3px rgba(76, 201, 240, 0.2);
+}
+
+.search-box button {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #6c757d;
+    cursor: pointer;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 0.8rem;
+}
+
+.sidebar-menu a {
+    display: block;
+    padding: 0.8rem 1rem;
+    color: #495057;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.sidebar-menu a:hover {
+    background: #f1f8fe;
+    color: #4361ee;
+    transform: translateX(-5px);
+    border-radius: 30px;
+    padding-left: 30px;
+}
+
+.sidebar-menu a i {
+    margin-left: 8px;
+    width: 20px;
+    text-align: center;
+}
+
+.recent-posts, .categories {
+    margin-top: 2rem;
+}
+
+.sidebar-subtitle {
+    font-size: 1.2rem;
+    color: #2b2d42;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dashed #dee2e6;
+    margin-top: 30%;
+}
+
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tag {
+    background: #f1f8fe;
+    color: #4361ee;
+    padding: 0.3rem 0.8rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    background: #4361ee;
+    color: white;
+}
+
+/* فوتر */
+.footer {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(135deg, #2b2d42, #1a1a2e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div{
+    z-index: 1;
+}
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #4cc9f0;
+    transform: translateY(-3px);
+}
+
+/* طراحی واکنش‌گرا */
+@media (max-width: 992px) {
+    .section {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    
+    .child2, .child3, .child4 {
+        width: 100%;
+        height: 150px;
+    }
+    
+    .section1 {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .child5, .child6 {
+        width: 100%;
+    }
+    
+    .child6 {
+        border-right: none;
+        border-top: 1px solid #e9ecef;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+    }
+    
+    .child, .child1 {
+        width: 100%;
+        height: 80px;
+        clip-path: none;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+}
